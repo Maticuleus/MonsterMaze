@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>hello phaser!</title>
+        <script src="assets/scripts/phaser.min.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+
+    var player;
+    var pWeaponL;
+    var pWeaponD;
+    var pLShield;
+    var pDShield;
+    var playerGroup;
+
+
+    var map;
+    var layer;
+    var walls;
+    var health;
+    var speed;
+    var game;
+    var enemies;
+    var gamePhysics;
+    var healthbar;
+    var isinvinsible;
+    var gameOver;
+    var bulletCollisionGroup;
+    var blackBulletGroup;
+    var whiteBulletGroup;
+    var weapons = [];
+    //set this to debug with unlimited health
+    var permainvincible=false;
+    window.onload = function() {
+
+        game = new Phaser.Game(700, 700, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+
+    };  
+
+    </script>
+
+    <script src="preload.js"></script>
+    <script src="create.js"></script>
+    <script src="update.js"></script>
+    <script src="render.js"></script>
+    <script src="weapons.js"></script>
+    <script src="playerupdate.js"></script>
+    <script src="enemieupdate.js"></script>
+    <script src="bossupdate.js"></script>
+    </body>
+</html>
