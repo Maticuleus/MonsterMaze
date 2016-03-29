@@ -26,7 +26,7 @@
     </div>
 
     <div class="splash-container">
-        <div class="splash">
+        <div id="gameContainer" class="splash">
             <script type="text/javascript">
 
                 var player;
@@ -55,7 +55,7 @@
                 var permainvincible = false; //toggle to debug with unlimited health
                 
                 window.onload = function() {
-                    game = new Phaser.Game(700, 700, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+                    game = new Phaser.Game(700, 700, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update, render: render });
                 };  
             
             </script>
