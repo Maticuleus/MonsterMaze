@@ -2,44 +2,65 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Monster Maze</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/styles/css/layouts/marketing.css">
         <script src="assets/scripts/phaser.min.js"></script>
     </head>
+
     <body>
-    <script type="text/javascript">
 
-    var player;
-    var pWeaponL;
-    var pWeaponD;
-    var pLShield;
-    var pDShield;
-    var playerGroup;
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href="">Your Site</a>
 
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
 
-    var map;
-    var layer;
-    var walls;
-    var health;
-    var speed;
-    var game;
-    var enemies;
-    var gamePhysics;
-    var healthbar;
-    var isinvinsible;
-    var gameOver;
-    var bulletCollisionGroup;
-    var blackBulletGroup;
-    var whiteBulletGroup;
-    var weapons = [];
-    //set this to debug with unlimited health
-    var permainvincible=false;
-    window.onload = function() {
+    <div class="splash-container">
+        <div class="splash">
+            <script type="text/javascript">
 
-        game = new Phaser.Game(700, 700, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
-
-    };  
-
-    </script>
+                var player;
+                var pWeaponL;
+                var pWeaponD;
+                var pLShield;
+                var pDShield;
+                var playerGroup;
+            
+                var map;
+                var layer;
+                var walls;
+                var health;
+                var speed;
+                var game;
+                var enemies;
+                var gamePhysics;
+                var healthbar;
+                var isinvinsible;
+                var gameOver;
+                var bulletCollisionGroup;
+                var blackBulletGroup;
+                var whiteBulletGroup;
+                var weapons = [];
+                
+                var permainvincible = false; //toggle to debug with unlimited health
+                
+                window.onload = function() {
+                    game = new Phaser.Game(700, 700, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+                };  
+            
+            </script>
+        </div>
+    </div>
 
     <script src="preload.js"></script>
     <script src="create.js"></script>
@@ -49,5 +70,6 @@
     <script src="playerupdate.js"></script>
     <script src="enemieupdate.js"></script>
     <script src="bossupdate.js"></script>
+    
     </body>
 </html>
