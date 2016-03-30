@@ -49,7 +49,7 @@
                 var permainvincible = false; //toggle to debug with unlimited health
                 
                 window.onload = function() {
-                    game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update, render: render });
+                    game = new Phaser.Game(950, 600, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update, render: render });
                 };  
             
             </script>
@@ -62,15 +62,15 @@
 
         <div class="pure-g">
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
                 <h3 class="content-subhead">
-                    <i class="fa fa-mouse-pointer"></i>
+                    <i class="fa fa-arrows"></i>
                     Movement
                 </h3>
                 <p>
                     Hold down the left mouse button to move around the map.
                 </p>
             </div>
+			
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-dot-circle-o"></i>
@@ -80,22 +80,24 @@
                     Mash the space bar to perform combo attacks with your sword.
                 </p>
             </div>
+			
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-circle-o"></i>
                     Light Shield
                 </h3>
                 <p>
-                    Press the <b>Z</b> key to render a shield that deflects light based projectiles.
+                    Press the <b>Z</b> key to render a shield that deflects light projectiles.
                 </p>
             </div>
+			
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-circle"></i>
                     Dark Shield
                 </h3>
                 <p>
-                    Press the <b>X</b> key to render a shield that deflects dark based projectiles.
+                    Press the <b>X</b> key to render a shield that deflects dark projectiles.
                 </p>
             </div>
         </div>
@@ -103,7 +105,7 @@
 
     <div class="footer l-box is-center">
 	Hacked together during <a href="http://globalgamejam.org/2016/games/enter-cthulu" target="_blank">Global Game Jam 2016</a><br />
-        View the source code <a href="https://github.com/Maticuleus/MonsterMaze" target="_blank">here</a>.
+        View the source code <a href="https://github.com/Maticuleus/MonsterMaze" target="_blank">here</a>
     </div>
     </div>
     
