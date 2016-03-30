@@ -9,5 +9,5 @@ Navigate through the maze and fight monsters.
 
 ### References
 Hacked together during *Global Game Jam 2016*: http://globalgamejam.org/2016/games/enter-cthulu <br />
-Developed using *PHASER* framework: http://phaser.io/
-Layout built using example by *Pure.css*: http://purecss.io/layouts/
+Developed using *PHASER* framework: http://phaser.io/ <br />
+Page layout built using *Pure.css* examples: http://purecss.io/layouts/
