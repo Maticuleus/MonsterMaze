@@ -130,6 +130,10 @@ a.pure-button-primary {
     color: #AECFE5;
 }
 
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
 
 /*
  * -- SPLASH STYLES --
